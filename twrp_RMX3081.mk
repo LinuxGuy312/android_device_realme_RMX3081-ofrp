@@ -19,8 +19,8 @@
 # Inherit from the Device Tree itself.
 $(call inherit-product, device/realme/RMX3081/device.mk)
 
-# Inherit from PBRP-common stuff, if building PBRP.
-$(call inherit-product, vendor/pb/config/common.mk)
+# Inherit from TWRP-common stuff.
+$(call inherit-product, vendor/twrp/config/common.mk)
 
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
